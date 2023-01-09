@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="news-homepage.css">
+  <title>Frontend Mentor | News homepage</title>
+  
+</head>
+<body>
+  <div class="container">
+    <div class="topmost">
+      <a href="">
+        <img id="logo" src="./assets/images/logo.svg" alt="logo">
+      </a>
+      
+      <div>
+        <img id="mobile-menu" src="./assets/images/icon-menu.svg" alt="menu icon">
+      </div>
+  
+      <nav class="desktopnav">
+        <a href="">Home</a>
+        <a href="">New</a>
+        <a href="">Popular</a>
+        <a href="">Trending</a>
+        <a href="">Categories</a>
+      </nav>
+      
+    </div>
+    <main class="topgrid">
+      <div>
+        <picture>
+          <source media="(min-width: 768px)" srcset="./assets/images/image-web-3-desktop.jpg"/>
+            <img id="mobileImage" src="./assets/images/image-web-3-mobile.jpg" alt="picture"/>
+        </picture>
+        <div class="desktopintro">
+          <h1>The Bright Future of Web 3.0?</h1>
+          <div class="intro">
+            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+              But is it really fulfilling its promise?</p>
+              <a href="">Read more</a>
+          </div>
+        </div>
+      </div>
+      
+      
+        <article class="new">
+          <h2>New</h2>
+          <div class="offer">
+            <a href="">Hydrogen VS Electric Cars</a>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+          <hr>
+          <div class="offer">
+            <a href="">The Downsides of AI Artistry</a>
+            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+          </div>
+          <hr>
+          <div class="offer">
+            <a href="">Is VC Funding Drying Up?</a>
+            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </div>
+        </article>
+    
+    </main>
+  
+    <div class="desktop-bottom">
+      <article class="write-up">
+        <img src="./assets/images/image-retro-pcs.jpg" alt="retro image">
+        <div class="info">
+          <h3>01</h3>
+          <a href="">Reviving Retro PCs</a>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>      
+      </article>
+  
+      <article class="write-up">
+        <img src="./assets/images/image-top-laptops.jpg" alt="laptop">
+        <div class="info">
+          <h3>02</h3>
+          <a href="">Top 10 Laptops of 2022</a>
+          <p>Our best picks for various needs and budgets.</p>
+        </div>
+      </article>
+  
+      <article class="write-up">
+        <img src="./assets/images/image-gaming-growth.jpg" alt="arcade">
+        <div class="info">
+          <h3>03</h3>
+          <a href="">The Growth of Gaming</a>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </article>
+    </div>
+  
+  </div>
+
+  <div id="mobilemenu-display">
+    <div id="menuclose">
+      <img src="./assets/images/icon-menu-close.svg" alt="close icon">
+    </div>
+    
+    <nav class="mobilemenu">
+      <a href="">Home</a>
+      <a href="">New</a>
+      <a href="">Popular</a>
+      <a href="">Trending</a>
+      <a href="">Categories</a>
+    </nav>
+  </div>
+  
+  <script>
+    let x = document.getElementById("mobile-menu");
+    let y = document.getElementById("menuclose");
+    x.addEventListener("click", () => {
+      document.getElementById("mobilemenu-display").style.display = "flex";
+      document.querySelector(".container").style.filter = "contrast(40%)";
+    });
+
+    y.addEventListener("click", () => {
+      document.getElementById("mobilemenu-display").style.display = "none";
+      document.querySelector(".container").style.filter = "none";
+    });
+
+    window.addEventListener("resize", () => {
+      document.getElementById("mobilemenu-display").style.display = "none";
+      document.querySelector(".container").style.filter = "none";
+    });
+
+  </script>
+</body>
+</html>

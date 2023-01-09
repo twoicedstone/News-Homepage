@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding:1rem;
+}
+
+.topmost {
+	display: flex;
+	justify-content: space-between;
+}
+
+.desktopnav {
+	display: none;
+}
+
+#logo {
+	width: 40px;
+}
+
+#mobile-menu {
+	width: 30px;
+}
+
+#mobileImage {
+	width: 100%;
+	margin-top: 1.5rem;
+}
+
+.topgrid h1 {
+	font-family: 'Inter', sans-serif;
+	font-weight: 800;
+	font-size: 2.5rem;
+	margin-top: 1rem;
+	color: hsl(240, 100%, 5%);
+	line-height: 2.5rem;
+}
+
+.intro p {
+	font-family: 'Inter', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 1.5rem;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	color: hsl(236, 13%, 42%);
+}
+
+.intro a {
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding: 0.5rem 2rem;
+	text-decoration: none;
+	background-color: hsl(5, 85%, 63%);
+	color: hsl(36, 100%, 99%);
+}
+
+.new {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+	font-family: 'Inter', sans-serif;
+	padding: 1rem;
+	background-color: hsl(240, 100%, 5%);
+}
+
+.new h2 {
+	margin-bottom: 2rem;
+	color: hsl(35, 77%, 62%);
+}
+
+hr {
+	border: 0.5px solid hsl(236, 13%, 42%);
+}
+
+.offer {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.offer a {
+	text-decoration: none;
+	margin-bottom: 0.5rem;
+	color: hsl(36, 100%, 99%);
+}
+
+.offer a:focus {
+	color:hsl(35, 77%, 62%);
+}
+
+.offer p {
+	color: hsl(236, 10%, 70%);
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 1.5rem;
+}
+
+.write-up {
+	display: flex;
+	margin-bottom: 2rem;
+	font-family: 'Inter', sans-serif;
+}
+
+.write-up img {
+	width: 100px;
+}
+
+.info {
+	margin-left: 1.5rem;
+}
+
+.info h3 {
+	font-size: 2rem;
+	color: hsl(233, 8%, 79%);
+}
+
+.info a {
+	text-decoration: none;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	font-weight: 800;
+	color: hsl(240, 100%, 5%);
+}
+
+.info a:focus {
+	color:hsl(5, 85%, 63%);
+}
+
+.info p {
+	font-size: 15px;
+	line-height: 1.5rem;
+	color:hsl(236, 13%, 42%);
+}
+
+#mobilemenu-display {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+	width: 70%;
+	height: 100vh;
+	position: absolute;
+	right: 0%;
+	top: 0%;
+	background-color: white;
+	display: none;
+}
+
+.mobilemenu {
+	display: flex;
+	flex-direction: column;
+	margin-top: 5rem;
+}
+
+.mobilemenu a {
+	margin-bottom: 2rem;
+	text-decoration: none;
+	color:hsl(240, 100%, 5%);
+	font-family: 'Inter', sans-serif;
+	font-size: 1.3rem;
+	font-weight: 400;
+}
+
+#menuclose {
+	align-self: end;
+}
+
+@media only screen and (min-width: 1130px) {
+	.container {
+		width: 100%;
+		padding: 5rem;
+	}
+
+	.topmost {
+		margin-bottom: 2rem;
+	}
+	
+	.topgrid {
+		display: grid;
+		grid-template-columns: 70% 40%;
+		gap: 2rem;
+	}
+
+	#mobile-menu {
+		display: none;
+	}
+
+	#logo {
+		width: 60px;
+	}
+
+	.desktopnav {
+		display: flex;
+		gap: 5rem;
+		align-items: flex-end;
+		font-family: 'Inter', sans-serif;
+	}
+
+	.desktopnav a:focus {
+		color:hsl(5, 85%, 63%);
+	}
+
+	.desktopnav a {
+		text-decoration: none;
+		font-size: 1.2rem;
+		font-weight: 400;
+		color: hsl(236, 13%, 42%);
+	}
+
+	.desktopnav a:hover {
+		color: hsl(5, 85%, 63%);
+	}
+
+	.desktopintro {
+		display: grid;
+		grid-template-columns: 50% 50%;
+	}
+
+	.new {
+		margin-top: 1.5rem;
+		width: 490px;
+		height: 97.2%;
+	}
+
+	.new h2 {
+		font-size: 3rem;
+		margin-top: 2rem;
+	}
+
+	.offer a {
+		font-size: 1.8rem;
+		cursor: pointer;
+	}
+
+	.offer a:hover {
+		color: hsl(35, 77%, 62%);
+	}
+
+	.offer p {
+		font-size: 1.4rem;
+		line-height: 2rem;
+		margin-top: 2rem;
+	}
+
+	.topgrid h1 {
+		font-size: 6rem;
+		line-height: 6rem;
+	}
+
+	.desktopintro p {
+		font-size: 1.7rem;
+		line-height: 2.5rem;
+		margin-top: 1.5rem;
+		margin-bottom: 5.4rem;
+	}
+
+	.intro a {
+		padding: 1rem 4rem;
+		letter-spacing: 0.5rem;
+		font-weight: 700; 
+	}
+
+	.intro a:hover {
+		background-color: hsl(240, 100%, 5%);
+	}
+
+	.intro a:focus {
+		background-color: hsl(240, 100%, 5%);
+	}
+
+	.desktop-bottom {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 5rem;
+	}
+
+	.write-up img {
+		width: 200px;
+	}
+
+	.info h3 {
+		font-size: 3rem;
+	}
+
+	.info a{
+		font-size: 1.5rem;
+	}
+
+	.info a:hover {
+		color: hsl(5, 85%, 63%);
+	}
+
+	.info p {
+		width: 270px;
+		font-size: 1.1rem;
+		line-height: 1.8rem;
+	}
+}
